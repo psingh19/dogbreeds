@@ -36,7 +36,7 @@ connection.once('open', ()=>{
 
     console.log('connected to db');
 
-        const server = app.listen(8080, ()=>{
+        const server = app.listen(process.env.PORT, ()=>{
         console.log('listening on 8080');
     });
 });
