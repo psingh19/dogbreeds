@@ -35,7 +35,7 @@ class App extends React.Component {
     
     render(){
         return <div className="app">
-            <h1>Assignment 8: Advanced Dog App</h1>
+            <h1>Advanced Dog App</h1>
             <Chooser dogs = {this.state.dogs} chooseDog = {this.chooseDog} />
             <Details currentDog = {this.state.current} />
         </div>
