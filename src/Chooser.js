@@ -5,9 +5,14 @@ class Chooser extends React.Component {
         
         return <div className="chooser">
             <h2>Choose a dog</h2>
-            <ul>{this.props.dogs.map(eachDog => <li key={eachDog}> <button onClick={()=>this.props.chooseDog(eachDog)}>{eachDog}</button> </li>)}</ul>
+    
+            <select id="mySelect" onChange={(event)=>this.props.chooseDog(event.target.value)}>
+                {this.props.dogs.map(eachDog => 
+                <option value={eachDog}>{eachDog}</option> )}
+            </select>
+    
         </div>
     }
+    
 }
-
 export default Chooser;

@@ -8,7 +8,7 @@ class DetailForms extends React.Component{
                     <textarea onChange={this.props.handleCommentChange} value={this.props.newComment} id='myValue'></textarea>
                     <input type='submit' value='Submit comment' />
             </form>
-            
+    
             <form>
                 <label>
                 number of images:
