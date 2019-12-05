@@ -1,2 +1,0 @@
-# dogbreeds
-AdvancedReactApp
