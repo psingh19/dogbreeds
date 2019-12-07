@@ -11,19 +11,10 @@ h1 {
     border-bottom:1px solid mediumpurple;
 }
 
-body {
-    margin:0;
-}
-
 .app {
     height:100vh;
 }
 
-.chooser {
-
-        overflow-y: scroll;
-
-}
 
 .details {
 
@@ -64,6 +55,10 @@ body {
     height:300px;
 
     margin:.3rem;
+}
+
+.comments {
+    padding: 0;    
 }
 
 .comments li {
@@ -113,7 +108,5 @@ textarea, label {
     .chooser {
         grid-row:2;
         grid-column:1;
-
-
     }
 }

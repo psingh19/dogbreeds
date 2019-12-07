@@ -9,7 +9,9 @@ class App extends React.Component {
         super(props);
         this.state = {
             dogs:[],
-            current: undefined
+            current: undefined,
+            dogChooser: false,
+            dogPrediction: false
         }
         
     this.chooseDog = this.chooseDog.bind(this);
@@ -26,11 +28,11 @@ class App extends React.Component {
         })
         .catch(error => console.log(error));
     }
-    
+
     chooseDog(dog) {
         this.setState({
             current:dog
-        })
+        });
     }
     
     render(){
